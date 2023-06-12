@@ -9,7 +9,7 @@ from random import shuffle
 
 def create_deck():
     """
-    This function creates a deck of cards.
+    This function creates 8 decks of cards.
     """
     deck = []
     suits = ["♠", "♥", "♦", "♣"]
