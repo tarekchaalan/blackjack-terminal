@@ -1,5 +1,9 @@
 #! /usr/bin/env python3
 
+# Tarek Chaalan
+# tchaalan23@csu.fullerton.edu
+# @tarekchaalan
+
 """
 This is a text-based blackjack game, played in the terminal.
 """

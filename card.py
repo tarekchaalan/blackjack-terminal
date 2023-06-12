@@ -1,3 +1,7 @@
+# Tarek Chaalan
+# tchaalan23@csu.fullerton.edu
+# @tarekchaalan
+
 """ 
 This module contains the functions related to the card. 
 """

@@ -1,3 +1,7 @@
+# Tarek Chaalan
+# tchaalan23@csu.fullerton.edu
+# @tarekchaalan
+
 """
 This file contains the functions that run the game.
 """

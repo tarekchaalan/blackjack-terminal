@@ -1,3 +1,7 @@
+# Tarek Chaalan
+# tchaalan23@csu.fullerton.edu
+# @tarekchaalan
+
 """
 This module contains functions for creating a deck of 
 cards and drawing a card from the deck.
