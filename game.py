@@ -132,7 +132,7 @@ def play_dealer_turn(dealer_hand, deck):
 
     while True:
         if dealer_hand["cardvalue"] >= 17 and dealer_hand["cardvalue"] <= 21:
-            print(dealer_hand["name"] + " stands")
+            print(dealer_hand["name"] + " stands with (" + str(dealer_hand["cardvalue"]) + ")")
             break
         if dealer_hand["cardvalue"] > 21:
             print(dealer_hand["name"] + " busts")
