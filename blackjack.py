@@ -39,7 +39,7 @@ def save_player_data(data):
 
 def get_player_chip_balance(players, player_name):
     """
-    Get player's chip balance from saved data.
+    Get player's chip balance from saved data
     """
     if player_name in players:
         return players[player_name]

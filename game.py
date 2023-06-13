@@ -152,7 +152,7 @@ def play_dealer_turn(dealer_hand, deck):
 
 def evaluate_hand(player, dealer_hand):
     """
-    This function evaluates the player and dealer's hands.
+    This function evaluates the player and dealer's hands
     """
     print(
         player["name"]

@@ -29,6 +29,6 @@ def create_deck():
 
 def draw_card(deck):
     """
-    This function draws a card from the deck and removes it from the deck
+    This function draws a card from the deck and removes it from the deck.
     """
     return deck.pop()
