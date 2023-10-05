@@ -39,7 +39,7 @@ pip install termcolor
 
 Run the game with the following command:
 ```bash
-python3 main.py
+python3 blackjack.py
 ```
 Follow the prompts to play the game. You can add multiple players, each with their own chip balance. The game will guide you through, explaining the rules as you play. Enjoy the interactive, colored text and the typewriter-style narration that enhances the gaming experience.
 
