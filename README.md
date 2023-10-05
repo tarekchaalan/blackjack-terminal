@@ -24,7 +24,7 @@ A text-based Blackjack game developed by Tarek Chaalan. This game is played in t
 
 1. Clone the repo:
 ```bash
-git clone https://github.com/YourMainAccount/blackjack-terminal.git
+git clone https://github.com/tarekchaalan/blackjack-terminal.git
 ```
 2. Navigate to the project directory:
 ```bash
