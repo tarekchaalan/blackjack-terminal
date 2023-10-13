@@ -12,8 +12,12 @@ from termcolor import colored
 import json
 import sys
 import time
-import termios
-import tty
+import sys
+import time
+import platform
+if platform.system() != 'Windows':
+    import termios
+    import tty
 
 from game import (
     deal_initial_cards,
@@ -24,14 +28,10 @@ from game import (
 from deck import create_deck
 
 def print_slowly(text, delay=0.05):
-    """
-    Print out the text in a typewriter fashion.
-    """
-    # Disable echoing of characters
-    fd = sys.stdin.fileno()
-    old_settings = termios.tcgetattr(fd)
-    tty.setcbreak(sys.stdin.fileno())
-
+    if platform.system() != 'Windows':
+        fd = sys.stdin.fileno()
+        old_settings = termios.tcgetattr(fd)
+        tty.setcbreak(sys.stdin.fileno())
     try:
         for char in text:
             sys.stdout.write(char)
@@ -39,24 +39,22 @@ def print_slowly(text, delay=0.05):
             time.sleep(delay)
         print()
     finally:
-        # Restore terminal settings
-        termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+        if platform.system() != 'Windows':
+            termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
 
 def input_slowly(prompt, delay=0.05):
-    # Disable echoing of characters
-    fd = sys.stdin.fileno()
-    old_settings = termios.tcgetattr(fd)
-    tty.setcbreak(sys.stdin.fileno())
-
+    if platform.system() != 'Windows':
+        fd = sys.stdin.fileno()
+        old_settings = termios.tcgetattr(fd)
+        tty.setcbreak(sys.stdin.fileno())
     try:
         for char in prompt:
             sys.stdout.write(char)
             sys.stdout.flush()
             time.sleep(delay)
     finally:
-        # Restore terminal settings
-        termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
-
+        if platform.system() != 'Windows':
+            termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
     return input()
 
 def colorize_player_card(card):
