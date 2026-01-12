@@ -41,7 +41,11 @@ Run the game with the following command:
 ```bash
 python3 blackjack.py
 ```
-Follow the prompts to play the game. You can add multiple players, each with their own chip balance. The game will guide you through, explaining the rules as you play. Enjoy the interactive, colored text and the typewriter-style narration that enhances the gaming experience.
+Follow the prompts to play the game. You can add multiple players, each with their own chip balance. The UI now features animated ASCII cards, a table view, and colorized suits.
+
+### Notes
+- If you are on Windows, ANSI colors are auto-enabled via `colorama`.
+- Resize your terminal for best visuals (≥ 100 columns recommended).
 
 ## Contributing
 
