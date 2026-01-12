@@ -1,3 +1,5 @@
+player_data.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -581,7 +583,10 @@ $RECYCLE.BIN/
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+Icon\r
+"Icon\r"
+
 
 # Thumbnails
 ._*
